@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Avisos La Placa | Señalización vial, placas y publicidad desde 1979</title>
+  <meta name="description" content="Avisos La Placa: fabricación de señalización vial, arquitectónica y fotoluminiscente, restauración de placas vehiculares, publicidad, impresión UV, corte láser CO2 y CNC. Desde 1979.">
+  <meta name="theme-color" content="#0B0B0B">
+  <meta property="og:title" content="Avisos La Placa — Desde 1979">
+  <meta property="og:description" content="Señalización, placas vehiculares, publicidad, láser CO2 y CNC.">
+  <meta property="og:image" content="assets/img/logo-la-placa.png">
+  <link rel="icon" href="assets/img/logo-la-placa.png">
+
+  <!-- Intro: se decide antes del primer render para evitar parpadeo -->
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        // móviles y tablets (vertical u horizontal), en cada carga
+        var mobile = window.matchMedia('(max-width: 1023px), (pointer: coarse)').matches;
+        if (mobile) document.documentElement.classList.add('has-intro');
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/logo-la-placa.webp" type="image/webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Avisos La Placa",
+    "foundingDate": "1979",
+    "telephone": "+57 318 691 1517",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cra 18 No. 22-20, San Francisco",
+      "addressLocality": "Bucaramanga",
+      "addressRegion": "Santander",
+      "addressCountry": "CO"
+    },
+    "sameAs": ["https://www.instagram.com/avisoslaplaca/", "https://www.facebook.com/avisoslaplaca1"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Intro móvil (franjas + logo) ===== -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__stripes">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="intro__logo">
+      <picture>
+        <source srcset="assets/img/logo-la-placa.webp" type="image/webp">
+        <img src="assets/img/logo-la-placa.png" alt="" width="673" height="300">
+      </picture>
+    </div>
+  </div>
+
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__brand" aria-label="Avisos La Placa, inicio">
+        <picture>
+          <source srcset="assets/img/logo-la-placa.webp" type="image/webp">
+          <img src="assets/img/logo-la-placa.png" alt="Avisos La Placa" width="673" height="300">
+        </picture>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#placas">Placas</a></li>
+          <li><a href="#maquinaria">Maquinaria</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+        </ul>
+        <a class="btn btn--yellow nav__cta" href="https://wa.me/573186911517?text=Hola%20Avisos%20La%20Placa%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+      </nav>
+
+      <a class="btn btn--yellow btn--sm header__cta" href="https://wa.me/573186911517?text=Hola%20Avisos%20La%20Placa%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Cotizar</a>
+
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero (negro) ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal><span class="dot"></span> Fabricantes desde 1979</p>
+          <h1 class="display hero__title" data-split>
+            Señalización que se ve.<br><span class="hl">Placas</span> que perduran.
+          </h1>
+          <p class="lead hero__lead" data-reveal>
+            Fabricamos señalización vial, restauramos placas vehiculares y producimos publicidad con tecnología propia: impresión UV, láser CO2 y CNC.
+          </p>
+          <div class="hero__actions" data-reveal>
+            <a class="btn btn--yellow" href="https://wa.me/573186911517?text=Hola%2C%20quiero%20cotizar%20un%20trabajo" target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Cotiza ahora
+            </a>
+            <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+          </div>
+          <ul class="hero__trust" data-reveal>
+            <li><strong data-count="45" data-suffix="+">45+</strong><span>años de trayectoria</span></li>
+            <li><strong data-count="6">6</strong><span>líneas de servicio</span></li>
+            <li><strong>100%</strong><span>fabricación propia</span></li>
+          </ul>
+        </div>
+
+        <!-- Visual: placa + señales flotantes -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="plate">
+            <div class="plate__inner">
+              <span class="plate__top">AVISOS</span>
+              <span class="plate__main">LA PLACA</span>
+              <span class="plate__bottom">DESDE 1979</span>
+              <i class="plate__hole plate__hole--tl"></i><i class="plate__hole plate__hole--tr"></i>
+              <i class="plate__hole plate__hole--bl"></i><i class="plate__hole plate__hole--br"></i>
+            </div>
+            <div class="plate__shine"></div>
+          </div>
+
+          <svg class="sign sign--diamond" viewBox="0 0 100 100"><rect x="15" y="15" width="70" height="70" rx="6" transform="rotate(45 50 50)" fill="#FFD400" stroke="#0B0B0B" stroke-width="4"/><path d="M50 30 L66 60 H34 Z" fill="none" stroke="#0B0B0B" stroke-width="5" stroke-linejoin="round"/><rect x="47.5" y="40" width="5" height="10" fill="#0B0B0B"/><circle cx="50" cy="55" r="2.6" fill="#0B0B0B"/></svg>
+
+          <svg class="sign sign--speed" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#fff"/><circle cx="50" cy="50" r="40" fill="none" stroke="#0B0B0B" stroke-width="9"/><text x="50" y="62" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="38" fill="#0B0B0B">80</text></svg>
+
+          <svg class="sign sign--exit" viewBox="0 0 120 70"><rect width="120" height="70" rx="8" fill="#FFD400"/><rect x="5" y="5" width="110" height="60" rx="5" fill="none" stroke="#0B0B0B" stroke-width="3"/><circle cx="34" cy="20" r="6" fill="#0B0B0B"/><path d="M34 28 L28 44 L20 54 M30 40 L42 54 M32 32 L44 36 M32 32 L22 34" stroke="#0B0B0B" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M62 35 H100 M88 23 L100 35 L88 47" stroke="#0B0B0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Franja marquee (amarillo) ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Señalización vial</span><b>◆</b><span>Placas vehiculares</span><b>◆</b><span>Impresión UV</span><b>◆</b><span>Láser CO2</span><b>◆</b><span>CNC Router</span><b>◆</b><span>Fotoluminiscente</span><b>◆</b><span>Pendones y pasacalles</span><b>◆</b>
+        <span>Señalización vial</span><b>◆</b><span>Placas vehiculares</span><b>◆</b><span>Impresión UV</span><b>◆</b><span>Láser CO2</span><b>◆</b><span>CNC Router</span><b>◆</b><span>Fotoluminiscente</span><b>◆</b><span>Pendones y pasacalles</span><b>◆</b>
+      </div>
+    </div>
+
+    <!-- ===== Servicios (blanco) ===== -->
+    <section class="section section--white" id="servicios">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow eyebrow--dark" data-reveal>Nuestros servicios</p>
+          <h2 class="display h2" data-split>Todo lo que tu marca y tu vía <span class="hl-ink">necesitan</span></h2>
+          <p class="lead lead--dark" data-reveal>Diseñamos, fabricamos e instalamos. Un solo taller para señalización, publicidad y trabajos a la medida.</p>
+        </div>
+
+        <div class="bento">
+          <!-- 1 Señalización -->
+          <article class="card card--feature" data-reveal>
+            <div class="card__media">
+              <picture>
+                <img src="assets/img/senalizacion-taller-960.webp" srcset="assets/img/senalizacion-taller-480.webp 480w, assets/img/senalizacion-taller-960.webp 960w" sizes="(min-width: 1024px) 66vw, 100vw" alt="Taller de señalización vial con señales de obra y desvío en fabricación, y un operario estampando una señal de desvío en serigrafía" width="960" height="960" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <span class="card__num">01</span>
+              <h3 class="card__title">Señalización</h3>
+              <ul class="tags">
+                <li>Señalización vial</li>
+                <li>Arquitectónica</li>
+                <li>Emergencia fotoluminiscente</li>
+                <li>Etiquetas reflectivas</li>
+                <li>Moldes para pintura y demarcación</li>
+              </ul>
+              <a class="link" href="https://wa.me/573186911517?text=Hola%2C%20necesito%20cotizar%20se%C3%B1alizaci%C3%B3n" target="_blank" rel="noopener">Cotizar señalización <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- 2 Publicidad -->
+          <article class="card card--yellow" data-reveal>
+            <span class="card__num">02</span>
+            <svg class="card__icon" aria-hidden="true"><use href="#i-megaphone"/></svg>
+            <h3 class="card__title">Publicidad</h3>
+            <p>Pendones, pasacalles, avisos luminosos y etiquetas adhesivas. Impresión digital UV con la nueva <strong>Roland TrueVIS MG2-640</strong>.</p>
+            <a class="link link--ink" href="https://wa.me/573186911517?text=Hola%2C%20necesito%20cotizar%20publicidad" target="_blank" rel="noopener">Cotizar publicidad <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <!-- 3 Placas -->
+          <article class="card card--black" data-reveal>
+            <span class="card__num">03</span>
+            <svg class="card__icon" aria-hidden="true"><use href="#i-plate"/></svg>
+            <h3 class="card__title">Restauración de placas</h3>
+            <p>Placas vehiculares bajo relieve en acero, bronce y aluminio. Devolvemos el brillo y la legibilidad original.</p>
+            <a class="link" href="#placas">Conocer más <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <!-- 4 Láser -->
+          <article class="card card--black" data-reveal>
+            <span class="card__num">04</span>
+            <svg class="card__icon" aria-hidden="true"><use href="#i-laser"/></svg>
+            <h3 class="card__title">Láser CO2</h3>
+            <p>Grabado y corte personalizado en acrílico hasta 10&nbsp;mm. Cama plana de 240&nbsp;×&nbsp;120&nbsp;cm.</p>
+            <a class="link" href="#maquinaria">Ver capacidad <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <!-- 5 CNC -->
+          <article class="card card--outline" data-reveal>
+            <span class="card__num">05</span>
+            <svg class="card__icon" aria-hidden="true"><use href="#i-cnc"/></svg>
+            <h3 class="card__title">CNC Router</h3>
+            <p>Moldes en aluminio, acero y madera. Trabajos a la medida de cada requerimiento. Área de 90&nbsp;×&nbsp;120&nbsp;cm.</p>
+            <a class="link link--ink" href="#maquinaria">Ver capacidad <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+
+        <!-- 6 Polarizado: discreto -->
+        <div class="also" data-reveal>
+          <div class="also__thumbs"><img src="assets/img/polarizado-vehicular-960.webp" srcset="assets/img/polarizado-vehicular-480.webp 480w, assets/img/polarizado-vehicular-960.webp 960w" sizes="64px" width="960" height="960" alt="Técnico de Avisos La Placa instalando polarizado en un vehículo" loading="lazy" decoding="async"><img src="assets/img/polarizado-arquitectonico-960.webp" srcset="assets/img/polarizado-arquitectonico-480.webp 480w, assets/img/polarizado-arquitectonico-960.webp 960w" sizes="64px" width="960" height="960" alt="Técnico de Avisos La Placa instalando polarizado en los ventanales de un edificio" loading="lazy" decoding="async"></div>
+          <span class="also__label">También</span>
+          <p><strong>Polarizado arquitectónico y vehicular.</strong> Láminas Spectra (cerámicas y carbón) y 3M, con garantía en materiales e instalación.</p>
+          <a class="link link--ink" href="https://wa.me/573186911517?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20polarizado" target="_blank" rel="noopener">Consultar <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Placas (amarillo) ===== -->
+    <section class="section section--yellow" id="placas">
+      <div class="hazard hazard--top" aria-hidden="true"></div>
+      <div class="container split">
+        <div class="split__copy">
+          <p class="eyebrow eyebrow--dark" data-reveal>Restauración de placas</p>
+          <h2 class="display h2" data-split>Tu placa, como recién salida del taller</h2>
+          <p class="lead lead--dark" data-reveal>Recuperamos placas vehiculares bajo relieve: limpieza, enderezado, pintura y acabado para que vuelvan a verse nítidas y legibles.</p>
+
+          <ol class="steps" data-reveal>
+            <li><span>1</span><div><strong>Diagnóstico</strong><p>Revisamos material y estado del relieve.</p></div></li>
+            <li><span>2</span><div><strong>Restauración</strong><p>Enderezado, limpieza y preparación de superficie.</p></div></li>
+            <li><span>3</span><div><strong>Acabado</strong><p>Pintura y sellado de larga duración.</p></div></li>
+          </ol>
+
+          <div class="chips" data-reveal>
+            <span class="chip">Acero</span><span class="chip">Bronce</span><span class="chip">Aluminio</span>
+          </div>
+        </div>
+
+        <div class="split__media" data-reveal>
+          <div class="ba">
+            <figure class="ba__img"><img src="assets/img/placa-antes-960.webp" srcset="assets/img/placa-antes-480.webp 480w, assets/img/placa-antes-960.webp 960w" sizes="(min-width: 1024px) 280px, 50vw" width="960" height="960" alt="Placa vehicular ALP 789 deteriorada, con pintura desprendida y óxido, antes de la restauración" loading="lazy" decoding="async"></figure>
+            <figure class="ba__img"><img src="assets/img/placa-despues-960.webp" srcset="assets/img/placa-despues-480.webp 480w, assets/img/placa-despues-960.webp 960w" sizes="(min-width: 1024px) 280px, 50vw" width="960" height="960" alt="La misma placa ALP 789 restaurada, con amarillo uniforme y relieve negro nítido" loading="lazy" decoding="async"></figure>
+            <span class="ba__tag ba__tag--a">Antes</span>
+            <span class="ba__tag ba__tag--b">Después</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Maquinaria (negro) ===== -->
+    <section class="section section--black" id="maquinaria">
+      <div class="hero__glow hero__glow--sm" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow" data-reveal>Tecnología propia</p>
+          <h2 class="display h2" data-split>Maquinaria <span class="hl">nueva</span> para trabajos de precisión</h2>
+          <p class="lead" data-reveal>Producimos en casa: controlamos calidad, tiempos y acabados.</p>
+        </div>
+
+        <div class="machines">
+          <article class="machine" data-reveal>
+            <div class="machine__media"><img src="assets/img/roland-mg2-640-960.webp" srcset="assets/img/roland-mg2-640-480.webp 480w, assets/img/roland-mg2-640-960.webp 960w" sizes="(min-width: 768px) 33vw, 100vw" width="960" height="960" alt="Impresora Roland TrueVIS MG2-640 imprimiendo pendones y etiquetas en el taller de impresión UV" loading="lazy" decoding="async"></div>
+            <div class="machine__body">
+              <span class="badge">Nueva</span>
+              <h3>Impresión digital UV</h3>
+              <p class="machine__model">Roland TrueVIS MG2-640</p>
+              <p>Colores vivos y alta definición para pendones, adhesivos, avisos y piezas especiales.</p>
+            </div>
+          </article>
+
+          <article class="machine" data-reveal>
+            <div class="machine__media"><img src="assets/img/laser-co2-960.webp" srcset="assets/img/laser-co2-480.webp 480w, assets/img/laser-co2-960.webp 960w" sizes="(min-width: 768px) 33vw, 100vw" width="960" height="960" alt="Máquina de corte láser CO2 grabando una lámina de madera en el taller" loading="lazy" decoding="async"></div>
+            <div class="machine__body">
+              <span class="badge">Nueva</span>
+              <h3>Láser CO2</h3>
+              <div class="spec"><strong data-count="240">240</strong><span>×</span><strong data-count="120">120</strong><em>cm de área</em></div>
+              <p>Grabado y personalización en acrílico hasta <strong>10 mm</strong> de espesor.</p>
+            </div>
+          </article>
+
+          <article class="machine" data-reveal>
+            <div class="machine__media"><img src="assets/img/cnc-moldes-960.webp" srcset="assets/img/cnc-moldes-480.webp 480w, assets/img/cnc-moldes-960.webp 960w" sizes="(min-width: 768px) 33vw, 100vw" width="960" height="960" alt="CNC Router mecanizando moldes de aluminio, con piezas en acero y madera tallada sobre la cama" loading="lazy" decoding="async"></div>
+            <div class="machine__body">
+              <h3>CNC Router</h3>
+              <div class="spec"><strong data-count="90">90</strong><span>×</span><strong data-count="120">120</strong><em>cm de área</em></div>
+              <p>Moldes en aluminio, acero y madera según la necesidad de cada cliente.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Proceso (blanco) ===== -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="eyebrow eyebrow--dark" data-reveal>Cómo trabajamos</p>
+          <h2 class="display h2" data-split>De la idea a la instalación</h2>
+        </div>
+        <ol class="process">
+          <li data-reveal><span class="process__n">01</span><h3>Cotiza</h3><p>Escríbenos por WhatsApp con medidas, cantidades o una foto de referencia.</p></li>
+          <li data-reveal><span class="process__n">02</span><h3>Diseño</h3><p>Preparamos la propuesta y la ajustamos contigo antes de producir.</p></li>
+          <li data-reveal><span class="process__n">03</span><h3>Fabricación</h3><p>Producimos en nuestro taller con materiales certificados.</p></li>
+          <li data-reveal><span class="process__n">04</span><h3>Entrega</h3><p>Entregamos o instalamos, listo para usar.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Nosotros / trayectoria (amarillo) ===== -->
+    <section class="section section--yellow" id="nosotros">
+      <div class="container about">
+        <div class="about__main">
+        <div class="about__year" aria-hidden="true" data-reveal>1979</div>
+        <div class="about__copy">
+          <p class="eyebrow eyebrow--dark" data-reveal>Nuestra historia</p>
+          <h2 class="display h2" data-split>Más de 45 años marcando el camino</h2>
+          <p class="lead lead--dark" data-reveal>Desde 1979 en Avisos La Placa acompañamos a empresas, constructoras, transportadores y particulares con señalización y avisos que cumplen la norma y duran.</p>
+        </div>
+        </div>
+
+        <div class="about__video" data-reveal>
+          <button class="yt" type="button" data-yt="4f-LgWw_Un8" aria-label="Reproducir video de Avisos La Placa">
+            <img src="assets/img/video-poster.webp" width="540" height="960" alt="" loading="lazy" decoding="async">
+            <span class="yt__play" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+            <span class="yt__label">Mira nuestro taller</span>
+          </button>
+        </div>
+        <ul class="stats">
+          <li data-reveal><strong data-count="45" data-suffix="+">45+</strong><span>Años de experiencia</span></li>
+          <li data-reveal><strong data-count="6">6</strong><span>Líneas de servicio</span></li>
+          <li data-reveal><strong data-count="3">3</strong><span>Máquinas de producción</span></li>
+          <li data-reveal><strong>100%</strong><span>Hecho en nuestro taller</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Galería (negro) ===== -->
+    <section class="section section--black">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow" data-reveal>Trabajos</p>
+          <h2 class="display h2" data-split>Proyectos <span class="hl">recientes</span></h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--tall" data-reveal><img src="assets/img/taller-senalizacion-960.webp" srcset="assets/img/taller-senalizacion-480.webp 480w, assets/img/taller-senalizacion-960.webp 960w" sizes="(min-width: 768px) 50vw, 100vw" width="960" height="960" alt="Operario aplicando lámina reflectiva a una señal de prohibido parquear en el taller de señalización vial" loading="lazy" decoding="async"><figcaption>Señalización vial</figcaption></figure>
+          <figure class="gallery__item" data-reveal><img src="assets/img/impresion-pendones-960.webp" srcset="assets/img/impresion-pendones-480.webp 480w, assets/img/impresion-pendones-960.webp 960w" sizes="(min-width: 768px) 25vw, 50vw" width="960" height="960" alt="Impresión digital de un pendón publicitario a todo color" loading="lazy" decoding="async"><figcaption>Pendones e impresión UV</figcaption></figure>
+          <figure class="gallery__item" data-reveal><img src="assets/img/grabado-acrilico-960.webp" srcset="assets/img/grabado-acrilico-480.webp 480w, assets/img/grabado-acrilico-960.webp 960w" sizes="(min-width: 768px) 25vw, 50vw" width="960" height="960" alt="Placa de acrílico de 10 mm con logotipo y textos grabados con láser" loading="lazy" decoding="async"><figcaption>Grabado láser en acrílico</figcaption></figure>
+          <figure class="gallery__item" data-reveal><img src="assets/img/placa-antes-despues-960.webp" srcset="assets/img/placa-antes-despues-480.webp 480w, assets/img/placa-antes-despues-960.webp 960w" sizes="(min-width: 768px) 25vw, 50vw" width="960" height="930" alt="Comparación de una placa vehicular antes y después de la restauración" loading="lazy" decoding="async"><figcaption>Restauración de placas</figcaption></figure>
+          <figure class="gallery__item" data-reveal><img src="assets/img/cnc-madera-960.webp" srcset="assets/img/cnc-madera-480.webp 480w, assets/img/cnc-madera-960.webp 960w" sizes="(min-width: 768px) 25vw, 50vw" width="960" height="960" alt="Fresa del CNC Router tallando una pieza de madera" loading="lazy" decoding="async"><figcaption>Tallado CNC en madera</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ (blanco) ===== -->
+    <section class="section section--white" id="faq">
+      <div class="container faq">
+        <div class="faq__head">
+          <p class="eyebrow eyebrow--dark" data-reveal>Preguntas frecuentes</p>
+          <h2 class="display h2" data-split>Resolvemos tus dudas</h2>
+          <p class="lead lead--dark" data-reveal>¿No encuentras tu pregunta? Escríbenos y te respondemos rápido.</p>
+          <a class="btn btn--black" href="https://wa.me/573186911517" target="_blank" rel="noopener" data-reveal><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> 318 691 1517</a>
+        </div>
+        <div class="faq__list">
+          <details class="qa" data-reveal open>
+            <summary>¿Fabrican señalización bajo la norma vial?</summary>
+            <p>Sí. Fabricamos señales reglamentarias, preventivas e informativas con láminas reflectivas, además de señalización arquitectónica y de emergencia fotoluminiscente.</p>
+          </details>
+          <details class="qa" data-reveal>
+            <summary>¿Qué materiales de placa pueden restaurar?</summary>
+            <p>Restauramos placas vehiculares bajo relieve en acero, bronce y aluminio.</p>
+          </details>
+          <details class="qa" data-reveal>
+            <summary>¿Qué tamaño máximo cortan con láser y CNC?</summary>
+            <p>El láser CO2 trabaja en un área de 240 × 120 cm (acrílico hasta 10 mm). El CNC Router trabaja en 90 × 120 cm en aluminio, acero y madera.</p>
+          </details>
+          <details class="qa" data-reveal>
+            <summary>¿Hacen trabajos personalizados?</summary>
+            <p>Sí. Moldes, grabados, avisos y piezas especiales se diseñan según tu requerimiento. Envíanos medidas o una referencia.</p>
+          </details>
+          <details class="qa" data-reveal>
+            <summary>¿Cómo solicito una cotización?</summary>
+            <p>Escríbenos por WhatsApp al 318 691 1517 con el tipo de trabajo, medidas y cantidades.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA final (negro) ===== -->
+    <section class="cta">
+      <div class="hero__glow hero__glow--bottom" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <h2 class="display cta__title" data-split>¿Tienes un proyecto? <span class="hl">Hagámoslo visible.</span></h2>
+        <p class="lead" data-reveal>Cuéntanos qué necesitas y te enviamos tu cotización.</p>
+        <a class="btn btn--yellow btn--lg" href="https://wa.me/573186911517?text=Hola%20Avisos%20La%20Placa%2C%20tengo%20un%20proyecto" target="_blank" rel="noopener" data-reveal>
+          <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Escríbenos por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <picture>
+            <source srcset="assets/img/logo-la-placa.webp" type="image/webp">
+            <img src="assets/img/logo-la-placa.png" alt="Avisos La Placa" width="673" height="300" loading="lazy">
+          </picture>
+          <p>Señalización, placas y publicidad desde 1979.</p>
+          <ul class="social">
+            <li><a href="https://www.instagram.com/avisoslaplaca/" target="_blank" rel="noopener" aria-label="Instagram de Avisos La Placa"><svg aria-hidden="true"><use href="#i-ig"/></svg></a></li>
+            <li><a href="https://www.facebook.com/avisoslaplaca1" target="_blank" rel="noopener" aria-label="Facebook de Avisos La Placa"><svg aria-hidden="true"><use href="#i-fb"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Servicios</h3>
+          <ul>
+            <li><a href="#servicios">Señalización</a></li>
+            <li><a href="#servicios">Publicidad</a></li>
+            <li><a href="#placas">Restauración de placas</a></li>
+            <li><a href="#maquinaria">Láser CO2 y CNC</a></li>
+            <li><a href="#servicios">Polarizado</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="https://wa.me/573186911517" target="_blank" rel="noopener">WhatsApp 318 691 1517</a></li>
+            <li><a href="https://wa.me/573174201571" target="_blank" rel="noopener">WhatsApp 317 420 1571</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Cra+18+%2322-20+San+Francisco+Bucaramanga+Colombia" target="_blank" rel="noopener">Cra 18 No. 22-20, San Francisco<br>Bucaramanga, Colombia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__word" aria-hidden="true">LA PLACA</div>
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> Avisos La Placa®. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa-float" href="https://wa.me/573186911517?text=Hola%20Avisos%20La%20Placa" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+
+  <!-- ===== Íconos SVG ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.23 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h3l6 4V6L7 10H4a1 1 0 0 0-1 1Z"/><path d="M16 9a3 3 0 0 1 0 6M18.5 6.5a7 7 0 0 1 0 11"/></g></symbol>
+    <symbol id="i-plate" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h3M6 14h5M14 10v4M17 10v4"/><circle cx="4.5" cy="8.5" r=".4"/><circle cx="19.5" cy="8.5" r=".4"/></g></symbol>
+    <symbol id="i-laser" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6v6l-3 3-3-3Z"/><path d="M12 11v6"/><path d="M4 21h16M8 17l-2 4M16 17l2 4"/></g></symbol>
+    <symbol id="i-cnc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18M7 4v4h10V4M10 8v5l2 3 2-3V8"/><path d="M3 20h18M5 20v-2h14v2"/></g></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.55V4.47A20.6 20.6 0 0 0 14.3 4.3c-2.2 0-3.7 1.34-3.7 3.8v2.4H8.1v3h2.5V21h2.9Z"/></symbol>
+  </svg>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
