@@ -124,14 +124,8 @@
         <!-- Visual: placa + señales flotantes -->
         <div class="hero__visual" aria-hidden="true">
           <div class="plate">
-            <div class="plate__inner">
-              <span class="plate__top">AVISOS</span>
-              <span class="plate__main">LA PLACA</span>
-              <span class="plate__bottom">DESDE 1979</span>
-              <i class="plate__hole plate__hole--tl"></i><i class="plate__hole plate__hole--tr"></i>
-              <i class="plate__hole plate__hole--bl"></i><i class="plate__hole plate__hole--br"></i>
-            </div>
-            <div class="plate__shine"></div>
+            <img class="plate__logo" src="assets/img/logo-la-placa.webp" alt="" width="673" height="300">
+            <div class="plate__glint"><div class="plate__shine"></div></div>
           </div>
 
           <svg class="sign sign--diamond" viewBox="0 0 100 100"><rect x="15" y="15" width="70" height="70" rx="6" transform="rotate(45 50 50)" fill="#FFD400" stroke="#0B0B0B" stroke-width="4"/><path d="M50 30 L66 60 H34 Z" fill="none" stroke="#0B0B0B" stroke-width="5" stroke-linejoin="round"/><rect x="47.5" y="40" width="5" height="10" fill="#0B0B0B"/><circle cx="50" cy="55" r="2.6" fill="#0B0B0B"/></svg>
@@ -163,10 +157,15 @@
         <div class="bento">
           <!-- 1 Señalización -->
           <article class="card card--feature" data-reveal>
-            <div class="card__media">
-              <picture>
-                <img src="assets/img/senalizacion-taller-960.webp" srcset="assets/img/senalizacion-taller-480.webp 480w, assets/img/senalizacion-taller-960.webp 960w" sizes="(min-width: 1024px) 66vw, 100vw" alt="Taller de señalización vial con señales de obra y desvío en fabricación, y un operario estampando una señal de desvío en serigrafía" width="960" height="960" loading="lazy" decoding="async">
-              </picture>
+            <div class="card__media signs" data-slider aria-roledescription="carrusel" aria-label="Señales de tránsito fabricadas por Avisos La Placa">
+              <div class="signs__track">
+                <figure class="signs__slide"><img src="assets/img/senal-1.webp" width="800" height="800" alt="Señal reflectiva amarilla de altura máxima 3.00 m y alta tensión, ingreso restringido" loading="lazy" decoding="async"></figure>
+                <figure class="signs__slide"><img src="assets/img/senal-2.webp" width="800" height="800" alt="Señal preventiva de entrada y salida de volquetas a 300 m" loading="lazy" decoding="async"></figure>
+                <figure class="signs__slide"><img src="assets/img/senal-3.webp" width="800" height="800" alt="Señal azul de cruce peatonal escolar" loading="lazy" decoding="async"></figure>
+                <figure class="signs__slide"><img src="assets/img/senal-4.webp" width="800" height="691" alt="Señal naranja de inicio de obra" loading="lazy" decoding="async"></figure>
+                <figure class="signs__slide"><img src="assets/img/senal-5.webp" width="800" height="800" alt="Señal naranja de trabajadores en la vía a 100 metros" loading="lazy" decoding="async"></figure>
+                <figure class="signs__slide"><img src="assets/img/senal-6.webp" width="800" height="691" alt="Señal circular de velocidad máxima 10 km/h" loading="lazy" decoding="async"></figure>
+              </div>
             </div>
             <div class="card__body">
               <span class="card__num">01</span>
@@ -235,7 +234,7 @@
       <div class="container split">
         <div class="split__copy">
           <p class="eyebrow eyebrow--dark" data-reveal>Restauración de placas</p>
-          <h2 class="display h2" data-split>Tu placa, como recién salida del taller</h2>
+          <h2 class="display h2" data-split>Tu placa, como recién salida del concesionario</h2>
           <p class="lead lead--dark" data-reveal>Recuperamos placas vehiculares bajo relieve: limpieza, enderezado, pintura y acabado para que vuelvan a verse nítidas y legibles.</p>
 
           <ol class="steps" data-reveal>
@@ -272,12 +271,13 @@
 
         <div class="machines">
           <article class="machine" data-reveal>
-            <div class="machine__media"><img src="assets/img/roland-mg2-640-960.webp" srcset="assets/img/roland-mg2-640-480.webp 480w, assets/img/roland-mg2-640-960.webp 960w" sizes="(min-width: 768px) 33vw, 100vw" width="960" height="960" alt="Impresora Roland TrueVIS MG2-640 imprimiendo pendones y etiquetas en el taller de impresión UV" loading="lazy" decoding="async"></div>
+            <div class="machine__media"><img src="assets/img/roland-uv-960.webp" srcset="assets/img/roland-uv-480.webp 480w, assets/img/roland-uv-960.webp 960w" sizes="(min-width: 768px) 33vw, 100vw" width="960" height="960" alt="Impresora Roland de impresión digital UV imprimiendo un afiche a todo color" loading="lazy" decoding="async"></div>
             <div class="machine__body">
               <span class="badge">Nueva</span>
               <h3>Impresión digital UV</h3>
               <p class="machine__model">Roland TrueVIS MG2-640</p>
               <p>Colores vivos y alta definición para pendones, adhesivos, avisos y piezas especiales.</p>
+              <a class="btn btn--yellow btn--sm machine__more" href="impresion-uv.html">Ver más <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </article>
 
@@ -288,6 +288,7 @@
               <h3>Láser CO2</h3>
               <div class="spec"><strong data-count="240">240</strong><span>×</span><strong data-count="120">120</strong><em>cm de área</em></div>
               <p>Grabado y personalización en acrílico hasta <strong>10 mm</strong> de espesor.</p>
+              <a class="btn btn--yellow btn--sm machine__more" href="laser-co2.html">Ver más <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </article>
 
@@ -297,6 +298,7 @@
               <h3>CNC Router</h3>
               <div class="spec"><strong data-count="90">90</strong><span>×</span><strong data-count="120">120</strong><em>cm de área</em></div>
               <p>Moldes en aluminio, acero y madera según la necesidad de cada cliente.</p>
+              <a class="btn btn--yellow btn--sm machine__more" href="cnc-router.html">Ver más <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </article>
         </div>
@@ -323,7 +325,10 @@
     <section class="section section--yellow" id="nosotros">
       <div class="container about">
         <div class="about__main">
-        <div class="about__year" aria-hidden="true" data-reveal>1979</div>
+        <div class="about__photo" data-reveal>
+          <img src="assets/img/fachada-960.webp" srcset="assets/img/fachada-480.webp 480w, assets/img/fachada-960.webp 960w" sizes="(min-width: 1024px) 60vw, 100vw" width="960" height="960" alt="Fachada amarilla de Avisos La Placa en Bucaramanga, con el aviso del logo y la entrada al local" loading="lazy" decoding="async">
+          <div class="about__year" aria-hidden="true">1979</div>
+        </div>
         <div class="about__copy">
           <p class="eyebrow eyebrow--dark" data-reveal>Nuestra historia</p>
           <h2 class="display h2" data-split>Más de 45 años marcando el camino</h2>

@@ -121,6 +121,45 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('is-open')) { setMenu(false); burger.focus(); } });
   window.matchMedia('(min-width: 1024px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
 
+  /* ---------- Slider de señales: 2 visibles, avance automático ---------- */
+  document.querySelectorAll('[data-slider]').forEach(function (slider) {
+    var track = slider.querySelector('.signs__track');
+    var slides = Array.prototype.slice.call(track.children);
+    var perView = 2, i = 0, timer = null;
+    if (reduceMotion || slides.length <= perView) return;
+
+    // copias de las primeras para un bucle continuo
+    slides.slice(0, perView).forEach(function (s) {
+      var c = s.cloneNode(true);
+      c.setAttribute('aria-hidden', 'true');
+      track.appendChild(c);
+    });
+
+    function jumpToStart() {
+      track.style.transition = 'none';
+      i = 0;
+      track.style.transform = 'translateX(0)';
+      void track.offsetWidth;
+      track.style.transition = '';
+    }
+    function next() {
+      if (document.hidden) return;
+      if (i >= slides.length) jumpToStart();
+      i++;
+      track.style.transform = 'translateX(-' + (i * 100 / perView) + '%)';
+    }
+    track.addEventListener('transitionend', function (e) {
+      if (e.target === track && i >= slides.length) jumpToStart();
+    });
+
+    // solo se mueve mientras está en pantalla
+    new IntersectionObserver(function (entries) {
+      var on = entries[0].isIntersecting;
+      if (on && !timer) timer = setInterval(next, 3000);
+      if (!on && timer) { clearInterval(timer); timer = null; }
+    }).observe(slider);
+  });
+
   /* ---------- Video: se carga el iframe solo al tocar ---------- */
   document.querySelectorAll('.yt[data-yt]').forEach(function (btn) {
     btn.addEventListener('click', function () {
